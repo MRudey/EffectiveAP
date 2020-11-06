@@ -1,0 +1,9 @@
+## Interface: 11305
+## Title: Effective AP
+## Notes: Calculates the effective AP.
+## Version: 0.1
+## Author: Rudey on Classic-Everlook [Horde]
+## Description: Creates a tooltip entry for any item to get the effective AP for any melee class. Effective AP is calculated from the items stats using specific weights for your class, e.g. STR = 20 AP = 20 EAP for Warriors.
+## DefaultState: enabled
+
+EffectiveAP.lua
