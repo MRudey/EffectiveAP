@@ -1,7 +1,7 @@
 -- @Author: Rudey-Everlook
 -- @Date:   2020-11-06 16:04:57
 -- @Last Modified by:   Rudey-Everlook
--- @Last Modified time: 2020-11-09 18:18:17
+-- @Last Modified time: 2020-11-09 18:33:13
 
 --[[
 
@@ -23,7 +23,7 @@ local function OnTooltipSetItem(self)
     end
 
 	-- Get the ID of the item.
-    local itemID = select(1, GetItemInfoInstant(itemName))
+    local itemID = select(1, GetItemInfoInstant(itemLink))
 
 
     -- If for some reason we did not get the ID above, we try another way here.
