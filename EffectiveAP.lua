@@ -1,14 +1,13 @@
 -- @Author: Rudey-Everlook
 -- @Date:   2020-11-06 16:04:57
 -- @Last Modified by:   Rudey-Everlook
--- @Last Modified time: 2020-11-06 17:17:48
+-- @Last Modified time: 2020-11-09 18:18:17
 
 --[[
 
 MAIN File for EffectiveAP Addon
 
 ]]
-
 
 local function OnTooltipSetItem(self)
     -- Get the name of the item.

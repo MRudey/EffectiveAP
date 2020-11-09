@@ -1,7 +1,7 @@
 -- @Author: Rudey-Everlook
 -- @Date:   2020-11-06 17:14:17
 -- @Last Modified by:   Rudey-Everlook
--- @Last Modified time: 2020-11-06 17:14:52
+-- @Last Modified time: 2020-11-09 18:18:59
 
 --[[
     Contains all class related data such as the individual weighting factors and
@@ -9,7 +9,7 @@
  ]]
 
 -- Weighting factors for melee combat
-local mfac = {
+mfac = {
     Druid = {agi = 0, str = 2, crit = 30, agicrit = 0},
     DruidBear = {agi = 0, str = 2, crit = 30, agicrit = 0},
     DruidCat = {agi = 1, str = 2, crit = 30, agicrit = 0},
@@ -21,14 +21,14 @@ local mfac = {
 }
 
 -- Weighting factors for ranged combat
-local rngfac = {
+rngfac = {
     Hunter = {agi = 2, rcrit = 30 },
     Rogue = {agi = 2, rcrit = 30},
     Warrior = {agi = 2, rcrit = 30}
 }
 
 -- Tables to look up which class can do what
-local melee_classes = {
+melee_classes = {
     'Druid','DruidBear','DruidCat','Hunter','Paladin','Rogue','Shaman','Warrior'
 }
-local ranged_classes = {'Hunter','Rogue','Warrior'}
+ranged_classes = {'Hunter','Rogue','Warrior'}

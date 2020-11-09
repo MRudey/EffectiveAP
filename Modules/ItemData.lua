@@ -1,7 +1,7 @@
 -- @Author: Rudey-Everlook
 -- @Date:   2020-11-06 17:10:06
 -- @Last Modified by:   Rudey-Everlook
--- @Last Modified time: 2020-11-06 17:13:15
+-- @Last Modified time: 2020-11-09 18:20:20
 
 --[[
     Contains all data for EffectiveAP that the WoW API does not provide out of
@@ -9,7 +9,7 @@
  ]]
 
 -- Table containing all itemIDs which have +1 crit
-local crit_items_1 = {
+crit_items_1 = {
     867, 1680, 2244, 3854, 7719, 7927, 7935, 7937, 8347, 11931, 12548, 12584,
     12639, 12774, 12783, 12929, 12936, 12940, 12963, 13036, 13098, 13162,
     13217, 13359, 13400, 13404, 13957, 13959, 13962, 14615, 15058, 15062,
@@ -43,7 +43,7 @@ local crit_items_1 = {
 }
 
 -- Table containing all itemIDs which have +2 crit
-local crit_items_2 = {
+crit_items_2 = {
     9413, 11726, 11735, 11921, 11926, 12587, 12640, 12757, 13944, 13965, 15056,
     15057, 16419, 16431, 16435, 16479, 16508, 16515, 16543, 16821, 18538,
     18715, 18817, 19323, 19358, 19690, 19834, 19875, 19945, 19998, 20487,
@@ -54,7 +54,7 @@ local crit_items_2 = {
 
 -- Numbers for inventory slots, slightly modified for double slots (rings,
 -- trinkets and weapons).
-local invslots = {
+invslots = {
     INVTYPE_HEAD = 1,
     INVTYPE_NECK = 2,
     INVTYPE_SHOULDER = 3,

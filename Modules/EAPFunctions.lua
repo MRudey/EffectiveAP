@@ -1,7 +1,7 @@
 -- @Author: Rudey-Everlook
 -- @Date:   2020-11-06 17:15:31
 -- @Last Modified by:   Rudey-Everlook
--- @Last Modified time: 2020-11-06 17:19:51
+-- @Last Modified time: 2020-11-09 18:19:40
 
 
 --[[
@@ -9,7 +9,7 @@
  ]]
 
 
-local function GetCritVal(itemID)
+function GetCritVal(itemID)
     if contains(crit_items_1, itemID) then
         crit = 1
     else
@@ -23,7 +23,7 @@ local function GetCritVal(itemID)
 end
 
 
-local function CalculateMeleeEAP(itemStats, itemID, playerClass)
+function CalculateMeleeEAP(itemStats, itemID, playerClass)
     -- Calculates the EAP from the items stats with the respective mutlipliers
     -- per class
     agi = (itemStats['ITEM_MOD_AGILITY_SHORT'] or 0) * mfac[playerClass]['agi']
@@ -38,7 +38,7 @@ local function CalculateMeleeEAP(itemStats, itemID, playerClass)
 end
 
 
-local function CalculateRangeEAP(itemStats, itemID, playerClass)
+function CalculateRangeEAP(itemStats, itemID, playerClass)
     -- Calculates the EAP from the items stats with the respective mutlipliers
     -- per class
 
@@ -52,7 +52,7 @@ local function CalculateRangeEAP(itemStats, itemID, playerClass)
 end
 
 
-local function FormatDiff(diff)
+function FormatDiff(diff)
     RED     = "|cffff2020";
     GREEN   = "|cff20ff20";
     GRAY    = "|cff808080";
@@ -74,7 +74,7 @@ local function FormatDiff(diff)
 end
 
 
-local function GetEquipEAP(invSlot, playerClass)
+function GetEquipEAP(invSlot, playerClass)
     local equipItemLink = GetInventoryItemLink('player', invSlot)
     local equipItemID = (GetInventoryItemID('player', invSlot) or -1)
 
